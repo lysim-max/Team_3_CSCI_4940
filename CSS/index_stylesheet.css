@@ -1,6 +1,6 @@
 h1{
     font-size: 24px;
 }
-header{
-    background-image: url(hexgon-background.jpg);
+.logo-bar{
+    background: yellow;
 }
