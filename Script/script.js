@@ -1,0 +1,1 @@
+/*Javascript page for incorporating the AI and Connecting the website to database*/ 
