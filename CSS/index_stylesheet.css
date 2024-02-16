@@ -2,106 +2,63 @@ body{
     width:100vw;
     height:100vh;
     margin: 0;
+    padding: 0;
+    background-image: url(../Images/hexagon-background.jpg);
+    background-position: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
 
 }
+.header{
+  background-image:linear-gradient(to right,#FDBE11, #FAA517,rgb(183, 82, 36)) ;
+  padding: 5px;
+  padding-left: 20px;
 
-.logo-bar{
-    height: 300px;
+
+}
+
+.login{
+    width: 320px;
+    height: 420px;
+    background: white;
+    font-style: 'Arial';
     color: black;
-    text-align: left;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 70px;
 }
-.logo-bar h1{
-    font-size: 16px;
-    margin: 0px;
-    
+.login h2{
+  text-align: center;
+  font-size: 22px;
 }
-.container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .row {
-    position: relative;
-    width: 100%;
-  }
-  
-  .row [class^="col"] {
-    float: left;
-    margin: 0.5rem 2%;
-    min-height: 0.125rem;
-  }
-  
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12 {
-    width: 96%;
-  }
-  
-  .col-1-sm {
-    width: 4.33%;
-  }
-  
-  .col-2-sm {
-    width: 12.66%;
-  }
-  
-  .col-3-sm {
-    width: 21%;
-  }
-  
-  .col-4-sm {
-    width: 29.33%;
-  }
-  
-  .col-5-sm {
-    width: 37.66%;
-  }
-  
-  .col-6-sm {
-    width: 46%;
-  }
-  
-  .col-7-sm {
-    width: 54.33%;
-  }
-  
-  .col-8-sm {
-    width: 62.66%;
-  }
-  
-  .col-9-sm {
-    width: 71%;
-  }
-  
-  .col-10-sm {
-    width: 79.33%;
-  }
-  
-  .col-11-sm {
-    width: 87.66%;
-  }
-  
-  .col-12-sm {
-    width: 96%;
-  }
-  
-  .row::after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-  
-  .hidden-sm {
-    display: none;
-  }
+.login input{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.login input[type="text"], input[type="password"]{
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  color: black;
+
+}
+.login input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: rgb(206, 93, 40);
+  font-size: 18px;
+  border-radius: 5px;
+
+}
+.login input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: rgb(183, 82, 36);
+}
+
