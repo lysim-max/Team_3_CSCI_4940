@@ -48,17 +48,19 @@ body{
   color: black;
 
 }
-.login input[type="submit"]{
+.submit{
   border: none;
   outline: none;
   height: 40px;
   background: rgb(206, 93, 40);
   font-size: 18px;
   border-radius: 5px;
+  width:100%;
 
 }
-.login input[type="submit"]:hover{
+.submit:hover{
   cursor: pointer;
   background-color: rgb(183, 82, 36);
+  width:100%;
 }
 

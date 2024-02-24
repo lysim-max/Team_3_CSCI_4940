@@ -1,0 +1,38 @@
+.background{
+    width:100vw;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/hexagon-background.jpg);
+    background-position: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    filter: blur(5px);
+}
+body{
+    width:100vw;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+.selection_box{
+    width: 320px;
+    height: 420px;
+    background: white;
+    font-style: 'Arial';
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 70px;
+}
+    
+.selection_box h2{
+    text-align: center;
+    font-size: 22px;
+}
