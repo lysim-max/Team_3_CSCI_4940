@@ -1,4 +1,4 @@
-/*Javascript page for incorporating the AI and Connecting the website to database*/
+/*Javascript page for logging in and selecting degree pages*/
 function loginFunc(){
     var user= document.getElementById("username").value;
     var pass= document.getElementById("password").value;
