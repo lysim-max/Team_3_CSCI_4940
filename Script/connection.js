@@ -14,7 +14,10 @@ myconnection.connect(function(err){
         console.error('Error connecting:' + err.stack);
         return;
     }
+    else{
     console.log("connected!");
+    }
+
 });
 
 
