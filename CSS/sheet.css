@@ -1,0 +1,58 @@
+.container{
+    display: flexbox;
+    border: 2px solid black;
+    padding: 10px;
+}
+.column-names{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;;
+}
+.column-name1{
+    padding:15px;
+
+}
+.column-name2{
+    padding:15px;
+    
+}
+.column-name3{
+    padding:15px;
+    
+}
+.column-name4{
+    padding:15px;
+    
+}
+.class-sheet{
+    display: flex;
+    
+    border: 2px solid black;
+
+}
+h1{
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+    width: 1fr;
+    
+
+}
+h2{
+    font-size: 20px;
+    justify-content: center;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 20px;
+    width: 1fr;
+    border: 2px solid black;
+
+}
+
+.button1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding-top: 15px;
+    padding-left: 15px;
+}

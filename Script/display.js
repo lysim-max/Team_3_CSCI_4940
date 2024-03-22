@@ -26,23 +26,23 @@ document.addEventListener("DOMContentLoaded", function () {
             sheetDiv.classList.add("class-sheet");
         
             const ID = document.createElement("h2");
-            ID.textContent = "ID: " + table.ID;
+            ID.textContent = table.ID;
         
-            const className = document.createElement("h3");
-            className.textContent = "Class Name: " + table.class_name;
+            const className = document.createElement("h2");
+            className.textContent = table.class_name;
         
             /*const semester = document.createElement("h4");
             semester.textContent = "Semester: " + table.semester;*/
         
-            const creditHours = document.createElement("h5");
-            creditHours.textContent = "Credit Hours: " + table.credit_hours;
+            const creditHours = document.createElement("h2");
+            creditHours.textContent = table.credit_hours;
         
             const satisfied = document.createElement("h2");
-            satisfied.textContent = "Satisfied: " + table.satisfied;
+            satisfied.textContent = table.satisfied;
         
             const satButton = document.createElement('button');
             satButton.setAttribute("class", "button1");
-            satButton.textContent = "Take Class";
+            satButton.textContent = " ";
         
             satButton.addEventListener("click", function (e) {
                 const satisfiedValue = 1;

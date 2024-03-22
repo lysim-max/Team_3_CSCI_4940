@@ -4,7 +4,7 @@ var mysql2 = require('mysql2');
 var myconnection = mysql2.createConnection({
     host: "127.0.0.1",
     user: "root",
-    password: "CSCI4400",
+    password: "deadlox02",
     database: "capstone_project",
 
 });
