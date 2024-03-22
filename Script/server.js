@@ -16,13 +16,7 @@ app.get('/table', (req, res) => {
     res.json(results);
  });
 });
-myconnection.query('SELECT business.crn, class_list.class_name, class_list.credit_hours, business.satisfied FROM business JOIN class_list ON business.crn = class_list.crn_num;' , function (error, results) {
-    if (error) {
-        console.error(error);
-        return res.status(500).json({ error: 'Internal Server Error' });
-    }
-    res.json(results);
- });
+
 
 /*app.post('/', (req,res) =>{
     const {coffeeName, coffeePrice}= req.body;
@@ -40,6 +34,15 @@ myconnection.query('SELECT business.crn, class_list.class_name, class_list.credi
 }
 });*/
 
+app.get('/table2', (req, res) => {
+myconnection.query('SELECT business.crn, class_list.class_name, class_list.credit_hours, business.satisfied FROM business JOIN class_list ON business.crn = class_list.crn_num;' , function (error, results) {
+    if (error) {
+        console.error(error);
+        return res.status(500).json({ error: 'Internal Server Error' });
+    }
+    res.json(results);
+    });
+ });
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
