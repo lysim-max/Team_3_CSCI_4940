@@ -2,7 +2,7 @@ const sheetGrid = document.getElementById("classes");
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    function addToCart(satisfied){
+    /*function addToCart(satisfied){
         fetch(`http://127.0.0.1:3000/satisfied`, {
             method: 'POST',
             headers:{'Content-Type': 'application/json',},
@@ -18,44 +18,48 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log('class changed: ',updatedInfo);
         })    
         .catch(error => console.error('Error: ', error));
-        }
+        }*/
 
 
-function createSheet(table) {
-    const sheetDiv = document.createElement("div");
-    sheetDiv.classList.add("class-sheet");
-
-    const ID = document.createElement("h2");
-        ID.src = table.ID;
-
-    const className = document.createElement("h3");
-        className.src = table.class_name;
-
-    const semester = document.createElement("h4");
-        semester.src= table.semester;
-
-    const creditHours = document.createElement("h5");
-        creditHours.src = table.credit_hours;
-
-    const satisfied =document.createElement("h2");
-        satisfied.src = table.satisfied;
-    const satButton = document.createElement('button')
-        satButton.setAttribute("class", "button1")
-
-classTaken.addEventListener("click", function (e) {
-            const satisfied = 1;
-            const className = table.class_name;
-            
-            addToCart(satisfied);
-            alert(className+" has been satisfied")
-        });
-        sheetDiv.appendChild(ID);
-        sheetDiv.appendChild(className); 
-        sheetDiv.appendChild(semester); 
-        sheetDiv.appendChild(creditHours); 
-        sheetDiv.appendChild(satisfied);     
-
-        return sheetDiv;
+        function createSheet(table) {
+            const sheetDiv = document.createElement("div");
+            sheetDiv.classList.add("class-sheet");
+        
+            const ID = document.createElement("h2");
+            ID.textContent = "ID: " + table.ID;
+        
+            const className = document.createElement("h3");
+            className.textContent = "Class Name: " + table.class_name;
+        
+            /*const semester = document.createElement("h4");
+            semester.textContent = "Semester: " + table.semester;*/
+        
+            const creditHours = document.createElement("h5");
+            creditHours.textContent = "Credit Hours: " + table.credit_hours;
+        
+            const satisfied = document.createElement("h2");
+            satisfied.textContent = "Satisfied: " + table.satisfied;
+        
+            const satButton = document.createElement('button');
+            satButton.setAttribute("class", "button1");
+            satButton.textContent = "Take Class";
+        
+            satButton.addEventListener("click", function (e) {
+                const satisfiedValue = 1;
+                const className = table.class_name;
+                
+                //addToCart(satisfiedValue);
+                alert(className + " has been satisfied");
+            });
+        
+            sheetDiv.appendChild(ID);
+            sheetDiv.appendChild(className); 
+            //sheetDiv.appendChild(semester); 
+            sheetDiv.appendChild(creditHours); 
+            sheetDiv.appendChild(satisfied);
+            sheetDiv.appendChild(satButton);
+        
+            return sheetDiv;
 
     }
     fetch('http://127.0.0.1:3000/table') 
@@ -72,5 +76,4 @@ classTaken.addEventListener("click", function (e) {
             });
         })
         .catch(error => console.error('Error:', error));
-}); 
-
+});

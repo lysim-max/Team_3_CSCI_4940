@@ -6,9 +6,9 @@ app.use(express.json());
 app.use(cors());
 
 const { myconnection } = require('./connection');
-app.get('/comp_sci', (req, res) => {
+app.get('/table', (req, res) => {
 
- myconnection.query('USE capstone_project; SELECT comp_sci.ID,class_list.class_name,class_list.semester,class_list.credit_hours,comp_sci.satisfied FROM comp_sci JOIN class_list ON comp_sci.ID=class_list.ID', function (error, results) {
+ myconnection.query('SELECT comp_sci.ID, class_list.class_name, class_list.semester, class_list.credit_hours, comp_sci.satisfied FROM comp_sci JOIN class_list ON comp_sci.ID = class_list.ID;', function (error, results) {
     if (error) {
         console.error(error);
         return res.status(500).json({ error: 'Internal Server Error' });
