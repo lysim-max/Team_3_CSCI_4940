@@ -22,3 +22,8 @@ var userOption = this.options[this.selectedIndex];
     }
 
 }
+function submitKevin(){
+    
+        alert("Please wait while we process your results...");
+    }
+

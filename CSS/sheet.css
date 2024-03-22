@@ -1,50 +1,71 @@
 .container{
     display: flexbox;
     border: 2px solid black;
+
     padding: 10px;
 }
-.column-names{
-    display: flex;
-    padding: 10px;
-    font-size: 30px;;
-}
-.column-name1{
-    padding:15px;
-
-}
-.column-name2{
-    padding:15px;
-    
-}
-.column-name3{
-    padding:15px;
-    
-}
-.column-name4{
-    padding:15px;
-    
-}
-.class-sheet{
-    display: flex;
-    
-    border: 2px solid black;
-
-}
-h1{
+.h1{
     font-size: 45px;
     text-align: center;
     padding: 15px;
-    width: 1fr;
     
 
 }
-h2{
+.column-names{
+    display: grid;
+    grid-template-columns: 100px 300px 150px 150px 150px;
+    padding-left: 15px;
     font-size: 20px;
-    justify-content: center;
-    padding: 0px;
-    padding-left: 30px;
-    padding-right: 20px;
-    width: 1fr;
+}
+.column-name1{
+   
+    text-align: center;
+    
+}
+.column-name2{
+   
+    text-align: center; 
+}
+.column-name3{
+   
+    text-align: center; 
+}
+.column-name4{
+    
+    text-align: center;
+}
+.class-sheet{
+    display: grid;
+    grid-template-columns: 100px 300px 150px 150px 150px;
+    
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+
+
+.ID-class{
+    font-size: 20px;
+    text-align: center;
+   
+    border: 2px solid black;
+
+}
+.name-class{
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+.credit-class{
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+.sat-class{
+    font-size: 20px;
+    text-align: center;
     border: 2px solid black;
 
 }

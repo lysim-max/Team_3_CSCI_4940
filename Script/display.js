@@ -24,21 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
         function createSheet(table) {
             const sheetDiv = document.createElement("div");
             sheetDiv.classList.add("class-sheet");
-        
-            const ID = document.createElement("h2");
+            
+            const ID = document.createElement("div");
+            ID.setAttribute("class", "ID-class");
             ID.textContent = table.ID;
         
-            const className = document.createElement("h2");
+            const className = document.createElement("div");
+            className.setAttribute("class", "name-class");
             className.textContent = table.class_name;
         
             /*const semester = document.createElement("h4");
             semester.textContent = "Semester: " + table.semester;*/
         
-            const creditHours = document.createElement("h2");
+            const creditHours = document.createElement("div");
+            creditHours.setAttribute("class", "credit-class");
             creditHours.textContent = table.credit_hours;
         
-            const satisfied = document.createElement("h2");
-            satisfied.textContent = table.satisfied;
+            //const satisfied = document.createElement("div");
+            //satisfied.setAttribute("class", "sat-class");
+            //satisfied.textContent = table.satisfied;
         
             const satButton = document.createElement('button');
             satButton.setAttribute("class", "button1");
@@ -56,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             sheetDiv.appendChild(className); 
             //sheetDiv.appendChild(semester); 
             sheetDiv.appendChild(creditHours); 
-            sheetDiv.appendChild(satisfied);
+            //sheetDiv.appendChild(satisfied);
             sheetDiv.appendChild(satButton);
         
             return sheetDiv;
