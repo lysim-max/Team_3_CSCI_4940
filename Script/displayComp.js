@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             const ID = document.createElement("div");
             ID.setAttribute("class", "ID-class");
-            ID.textContent = table.ID;
+            ID.textContent = table.crn;
         
             const className = document.createElement("div");
             className.setAttribute("class", "name-class");

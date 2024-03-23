@@ -8,7 +8,7 @@ app.use(cors());
 const { myconnection } = require('./connection');
 app.get('/table', (req, res) => {
 
- myconnection.query('SELECT comp_sci.ID, class_list.class_name, class_list.semester, class_list.credit_hours, comp_sci.satisfied FROM comp_sci JOIN class_list ON comp_sci.ID = class_list.ID;', function (error, results) {
+ myconnection.query('SELECT comp_sci.crn, class_list.class_name, class_list.semester, class_list.credit_hours, comp_sci.satisfied FROM comp_sci JOIN class_list ON comp_sci.crn = class_list.crn_num;', function (error, results) {
     if (error) {
         console.error(error);
         return res.status(500).json({ error: 'Internal Server Error' });
@@ -43,6 +43,15 @@ myconnection.query('SELECT business.crn, class_list.class_name, class_list.credi
     res.json(results);
     });
  });
+ app.get('/table3', (req, res) => {
+    myconnection.query('SELECT it.crn, class_list.class_name, class_list.credit_hours, it.satisfied FROM it JOIN class_list ON it.crn = class_list.crn_num;' , function (error, results) {
+        if (error) {
+            console.error(error);
+            return res.status(500).json({ error: 'Internal Server Error' });
+        }
+        res.json(results);
+        });
+     });
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
