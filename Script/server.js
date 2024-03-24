@@ -18,10 +18,10 @@ app.get('/table', (req, res) => {
 });
 
 
-/*app.post('/', (req,res) =>{
-    const {coffeeName, coffeePrice}= req.body;
-    if (coffeeName && coffeePrice){
-    myconnection.query('INSERT INTO cart (coffee_name, coffee_price) VALUES (?, ?)',[coffeeName, coffeePrice],
+/*app.post('/table', (req,res) =>{
+    const {class_name, credit_hours}= req.body;
+    if (class_name && credit_hours){
+    myconnection.query('INSERT INTO output (class__name, credit__hours) VALUES (?, ?)',[class_name, credit_hours],
     (error, results) => {
         if(error){
             console.error(error);
