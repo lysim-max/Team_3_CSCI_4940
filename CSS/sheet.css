@@ -13,7 +13,7 @@
 }
 .column-names{
     display: grid;
-    grid-template-columns: 100px 300px 150px 150px 150px;
+    grid-template-columns: 125px 300px 150px 150px 150px;
     padding-left: 15px;
     font-size: 20px;
 }
@@ -36,7 +36,7 @@
 }
 .class-sheet{
     display: grid;
-    grid-template-columns: 100px 300px 150px 150px 150px;
+    grid-template-columns: 125px 300px 150px 150px 150px;
     
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -76,4 +76,6 @@
     border-radius: 50%;
     padding-top: 15px;
     padding-left: 15px;
+    transform: translateX(60px);
+    
 }

@@ -2,11 +2,11 @@ const sheetGrid = document.getElementById("classes");
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    /*function addToCart(satisfied){
-        fetch(`http://127.0.0.1:3000/satisfied`, {
+    function alterTable(satisfied){
+        fetch(`http://127.0.0.1:3000/postit`, {
             method: 'POST',
             headers:{'Content-Type': 'application/json',},
-            body: JSON.stringify(satisfied),
+            body: JSON.varchar(satisfied),
         })
         .then (response =>{
             if (!response.ok){
@@ -18,51 +18,55 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log('class changed: ',updatedInfo);
         })    
         .catch(error => console.error('Error: ', error));
-        }*/
+        }
 
 
         function createSheet(table3) {
             const sheetDiv = document.createElement("div");
             sheetDiv.classList.add("class-sheet");
-            
             const ID = document.createElement("div");
             ID.setAttribute("class", "ID-class");
             ID.textContent = table3.crn;
-        
+            const ID2=table3.ID;
             const className = document.createElement("div");
             className.setAttribute("class", "name-class");
             className.textContent = table3.class_name;
-        
+
             /*const semester = document.createElement("h4");
             semester.textContent = "Semester: " + table.semester;*/
-        
+
             const creditHours = document.createElement("div");
             creditHours.setAttribute("class", "credit-class");
             creditHours.textContent = table3.credit_hours;
-        
+
             //const satisfied = document.createElement("div");
             //satisfied.setAttribute("class", "sat-class");
             //satisfied.textContent = table.satisfied;
-        
+
             const satButton = document.createElement('button');
             satButton.setAttribute("class", "button1");
             satButton.textContent = " ";
-        
-            satButton.addEventListener("click", function (e) {
-                const satisfiedValue = 1;
-                const className = table3.class_name;
-                
-                //addToCart(satisfiedValue);
-                alert(className + " has been satisfied");
+satButton.addEventListener("click", function (e) {
+                const satisfiedValue = "1";
+                satButton.style.backgroundColor ="orange";
+                const crn = table3.crn; // Assuming table3 has the crn property
+                alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
+                alert(crn + " has been satisfied");
             });
-        
+            /*satButton.addEventListener("unclick", function (e) {
+                const satisfiedValue = "0";
+                satButton.style.backgroundColor ="grey";
+                const crn = table3.crn; // Assuming table3 has the crn property
+                alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
+                alert(crn + " has been satisfied");
+            });*/
+
             sheetDiv.appendChild(ID);
             sheetDiv.appendChild(className); 
             //sheetDiv.appendChild(semester); 
             sheetDiv.appendChild(creditHours); 
             //sheetDiv.appendChild(satisfied);
             sheetDiv.appendChild(satButton);
-        
             return sheetDiv;
 
     }
