@@ -1,9 +1,21 @@
 const express = require('express');
 const app = express();
+//const { Configuration, OpenAIApi } = require("openai")
 const port = 3000; 
+//const port2=8000;
 const cors = require('cors');
+const bodyParser = require("body-parser");
+//require(".env").config();
 app.use(express.json());
 app.use(cors());
+/*const configuration = new Configuration({
+    apiKey: process.env.OPENAI_API_KEY || ""
+  })
+  const openai = new OpenAIApi(configuration)
+
+  app.listen(8000, ()=>{
+    console.log(servcer running on port: 8000)
+  })*/
 
 const { myconnection } = require('./connection');
 app.get('/table', (req, res) => {
@@ -97,7 +109,7 @@ myconnection.query('SELECT business.crn, class_list.class_name, class_list.credi
             );
         }
     );
-});
+})
  app.get('/table3', (req, res) => {
     myconnection.query('SELECT it.crn, class_list.class_name, class_list.credit_hours, it.satisfied FROM it JOIN class_list ON it.crn = class_list.crn_num ORDER BY class_name ASC;' , function (error, results) {
         if (error) {

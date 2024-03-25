@@ -2,11 +2,12 @@ const sheetGrid = document.getElementById("classes");
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    function alterTable(satisfied){
+    function alterTable(crn,satisfiedValue){
+        const classData = { crn: crn, satisfiedValue: satisfiedValue };
         fetch(`http://127.0.0.1:3000/postit`, {
             method: 'POST',
             headers:{'Content-Type': 'application/json',},
-            body: JSON.varchar(satisfied),
+            body: JSON.stringify(classData),
         })
         .then (response =>{
             if (!response.ok){
