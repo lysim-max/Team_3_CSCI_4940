@@ -44,15 +44,29 @@ document.addEventListener("DOMContentLoaded", function () {
             //satisfied.setAttribute("class", "sat-class");
             //satisfied.textContent = table.satisfied;
 
-            const satButton = document.createElement('button');
+            const satButton = document.createElement('input');
+            satButton.type = "checkbox";
             satButton.setAttribute("class", "button1");
             satButton.textContent = " ";
-satButton.addEventListener("click", function (e) {
+
+            
+            satButton.addEventListener("change", function (e) {
+
+                if(satButton.checked){
                 const satisfiedValue = "1";
-                satButton.style.backgroundColor ="orange";
+                satButton.style.accentColor ="orange";
                 const crn = table.crn; // Assuming table3 has the crn property
                 alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
                 alert(crn + " has been satisfied");
+                }
+                else{
+                    const satisfiedValue = "0";
+                const crn = table.crn; // Assuming table3 has the crn property
+                alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
+                alert(crn + " has been satisfied");
+
+                }
+        
             });
 
             sheetDiv.appendChild(ID);
