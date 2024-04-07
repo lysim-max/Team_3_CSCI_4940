@@ -1,0 +1,138 @@
+# Course-specific facts
+course_name,credit_hours
+"Composition I",3,
+"Composition II",3
+Precalculus,3
+"American Government",3
+"Wrld Civ II",3
+"US Hist I",3
+"US Hist II",3
+"Intro to Programming I",3
+"Intro to Programming II",3
+"Computer Applications",3
+"Fundementals of Speech",3
+"Intro to Professional Comm",3
+"The Global Village",3
+"Calculus I",3
+"World Civ I",3
+"Assembly Language Prog",3
+"Discrete Structures in CS",3
+"Data Structures and Algorithms",3
+"Ethics in Comp Profession",3
+"Lifetime Fitness",1
+"CPR/First Aid",2
+"Computer Architecture",3
+"Principles of OS",3
+"Concepts of Prog Languages",3
+"Intro to Comp Networks",3
+"Computer Security",3
+"Design of OS",3
+"Software Engineering",3
+"Intro to Database Systems",3
+"Des & Anal of Algorithms",3
+"Cloud Computing",3
+"Mobile and Distributed Computing",3
+"Artificial Intelligence",3
+"Capstone Project",3
+"Web Design",3
+"Syst Anal Design & Implemt I",3
+"Info Storage & Retrieval",3
+"Special Problems in CS",3
+Internship,3
+"Elementary Statistics",3
+"Calculus II",4
+"Calculus III",4
+"Discrete Systems I",3
+"Differential Equations",3
+"Scientific Computation",3
+"Adv Math Modeling",3
+"Mathematical Statistics",3
+"Principles of Macroeconomics",3
+"World Literature I",3
+"World Literature II",3
+"British Literature I",3
+"British Literature II",3
+"American Literature I",3
+"American Literature II",3
+"The African Diaspora",3
+"Intercultural Studies Seminar",3
+"Introduction to Leadership",3
+"FDNS of Information Literacy",3
+"Intro to Global Issues",3
+"Intro to Psychology",3
+"The World and Its Peoples",3
+"Introduction to Sociology",3
+"Global Social Justice",3
+"Perf Skills for Bus and Prof",3
+"Int Women, Gender, & Sexuality",3
+"Art Appreciation",3
+"Music Appreciation",3
+"Theatre Appreciation",3
+"Essentials of Biology I",3
+"Essentials of Biology I Lab",1
+"Essential of Biology Critical Thinking Lab",1
+"Essential of Biology II",3
+"Essential of Biology II Lab",1
+"Principles of Biology I with Lab",4
+"Principles of Biology II with Lab",4
+"Principles of Chemistry I Lab",1
+"Earth Materials, Processes, & Environments",4
+"Earth History and Global Change",4
+"Introductory Physics I with Lab",4
+"Introductory Physics II with Lab",4
+"Principles of Physics I with Lab",4
+"Principles of Physics II with Lab",4
+"Applied Botany",3
+"Everyday Chemistry",3
+"Principles of Chemistry I",3
+"Principles of Chemistry II",3
+"Introduction to Environmental Science",3
+"Geology of Georgia",3
+"Solar System Exploration",3
+"Stellar Astronomy",3
+"Natural Hazards",3
+"Psychology as a Natural Science",3
+"2D Design Concepts and Color",3
+"Audio-Video Production Tech I",3
+"Beg Digital Arts I",3
+"Int Digital Arts II",3
+"Audio-Video Production Tech II",3
+"Human Comp Interaction",3
+"Advanced Web Design",3
+"Special Problems in IT",3
+"IT Internship",3
+"Accounting Principles I",3
+"Accounting Principles II",3
+"Microcomputer App in Business",3
+"The Environment of Business",3
+"Principles of Microeconomics",3
+"Business Statistics",3
+"Quantitative Management",3
+"Communications in Bus Env",3
+"Business Finance",3
+"Principles of Marketing",3
+"Principles of Management",3
+"Intro to International Business",3
+"Strategic Mgnt-CAPSTONE",3
+"Personal Selling",3
+"Consumer Behavior",3
+"Marketing Communication",3
+"Marketing Management",3
+"Marketing Research",3
+"Approved Marketing Course",3
+"Approved Marketing Course 2",3
+"Approved Business Course 1",3
+"Approved Business Course 2",3
+"Free Elective 1",3
+"Free Elective 2",3
+"Free Elective 3",3
+"Free Phys Ed Activity",1
+"Introduction to Math Modeling",3
+"College Algebra",3
+
+
+#credit hour minimum and maximum
+student_type, credit_hour_max, credit_hour_min
+"Full Time", 15, 12
+"Part Time", 11, 1
+

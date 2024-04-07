@@ -1,0 +1,527 @@
+[
+	{
+		"class_name" : "Composition I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Composition II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Precalculus",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "American Government",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Wrld Civ II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "US Hist I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "US Hist II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to Programming I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to Programming II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Computer Applications",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Fundementals of Speech",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to Professional Comm",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "The Global Village",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Calculus I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "World Civ I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Assembly Language Prog",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Discrete Structures in CS",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Data Structures and Algorithms",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Ethics in Comp Profession",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Lifetime Fitness",
+		"credit_hours" : 1
+	},
+	{
+		"class_name" : "CPR/First Aid",
+		"credit_hours" : 2
+	},
+	{
+		"class_name" : "Computer Architecture",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Principles of OS",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Concepts of Prog Languages",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to Comp Networks",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Computer Security",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Design of OS",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Software Engineering",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to Database Systems",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Des & Anal of Algorithms",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Cloud Computing",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Mobile and Distributed Computing",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Artificial Intelligence",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Capstone Project",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Web Design",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Syst Anal Design & Implemt I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Info Storage & Retrieval",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Special Problems in CS",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Internship",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Elementary Statistics",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Calculus II",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Calculus III",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Discrete Systems I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Differential Equations",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Scientific Computation",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Adv Math Modeling",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Mathematical Statistics",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Principles of Macroeconomics",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "World Literature I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "World Literature II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "British Literature I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "British Literature II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "American Literature I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "American Literature II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "The African Diaspora",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intercultural Studies Seminar",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Introduction to Leadership",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "FDNS of Information Literacy",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to Global Issues",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to Psychology",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "The World and Its Peoples",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Introduction to Sociology",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Global Social Justice",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Perf Skills for Bus and Prof",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Int Women, Gender, & Sexuality",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Art Appreciation",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Music Appreciation",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Theatre Appreciation",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Essentials of Biology I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Essentials of Biology I Lab",
+		"credit_hours" : 1
+	},
+	{
+		"class_name" : "Essential of Biology Critical Thinking Lab",
+		"credit_hours" : 1
+	},
+	{
+		"class_name" : "Essential of Biology II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Essential of Biology II Lab",
+		"credit_hours" : 1
+	},
+	{
+		"class_name" : "Principles of Biology I with Lab",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Principles of Biology II with Lab",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Principles of Chemistry I Lab",
+		"credit_hours" : 1
+	},
+	{
+		"class_name" : "Earth Materials, Processes, & Environments",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Earth History and Global Change",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Introductory Physics I with Lab",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Introductory Physics II with Lab",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Principles of Physics I with Lab",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Principles of Physics II with Lab",
+		"credit_hours" : 4
+	},
+	{
+		"class_name" : "Applied Botany",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Everyday Chemistry",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Principles of Chemistry I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Principles of Chemistry II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Introduction to Environmental Science",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Geology of Georgia",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Solar System Exploration",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Stellar Astronomy",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Natural Hazards",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Psychology as a Natural Science",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "2D Design Concepts and Color",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Audio-Video Production Tech I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Beg Digital Arts I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Int Digital Arts II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Audio-Video Production Tech II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Human Comp Interaction",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Advanced Web Design",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Special Problems in IT",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "IT Internship",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Accounting Principles I",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Accounting Principles II",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Microcomputer App in Business",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "The Environment of Business",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Principles of Microeconomics",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Business Statistics",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Quantitative Management",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Communications in Bus Env",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Business Finance",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Principles of Marketing",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Principles of Management",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Intro to International Business",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Strategic Mgnt-CAPSTONE",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Personal Selling",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Consumer Behavior",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Marketing Communication",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Marketing Management",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Marketing Research",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Approved Marketing Course",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Approved Marketing Course 2",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Approved Business Course 1",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Approved Business Course 2",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Free Elective 1",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Free Elective 2",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Free Elective 3",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "Free Phys Ed Activity",
+		"credit_hours" : 1
+	},
+	{
+		"class_name" : "Introduction to Math Modeling",
+		"credit_hours" : 3
+	},
+	{
+		"class_name" : "College Algebra",
+		"credit_hours" : 3
+	},
+    {
+        "fact_type": "credit_hour_limits",
+        "data": [
+          {"student_type": "Full Time", "credit_hour_max": 15, "credit_hour_min": 12},
+          {"student_type": "Part Time", "credit_hour_max": 11, "credit_hour_min": 1}
+        ]
+      }
+]
+
+
