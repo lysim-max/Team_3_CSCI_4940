@@ -32,7 +32,7 @@ function loadScript(url) {
     });
 }
 
-function submitKevin() {
+/*function submitKevin() {
     alert("Please wait while we process your results...");
 
     // Make a GET request to the filterClasses endpoint
@@ -58,4 +58,21 @@ function submitKevin() {
             console.error('Error initiating file download:', error);
             alert('Error initiating file download. Please try again later.');
         });
+}*/
+function submitKevin() {
+    alert("Please wait while we process your results...");
+
+    // Make a POST request to trigger processing of filtered classes
+    fetch('http://localhost:3000/filterClasses', {
+        method: 'POST'
+        // Optionally, you can include headers or a body if needed
+    })
+    .then(() => {
+        // Optional: You can log a message once the request is sent
+        console.log('Request to process filtered classes sent.');
+    })
+    .catch(error => {
+        console.error('Error sending request:', error);
+        alert('Error sending request to process filtered classes. Please try again later.');
+    });
 }

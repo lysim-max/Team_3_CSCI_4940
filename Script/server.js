@@ -85,7 +85,7 @@ app.get('/executeQuery', async (req, res) => {
     }
 });
 
-app.get('/filterClasses', async (req, res) => {
+/*app.get('/filterClasses', async (req, res) => {
     try {
         // Retrieve data from the database
         const [rows] = await myconnection.query('SELECT it.crn, class_list.class_name, class_list.credit_hours, it.satisfied FROM it JOIN class_list ON it.crn = class_list.crn_num');
@@ -94,37 +94,23 @@ app.get('/filterClasses', async (req, res) => {
         const filteredRows = rows.filter(course => course.satisfied !== '1');
 
         // Generate CSV data from filtered rows
-        const csvData = filteredRows.map(course => `${course.class_name},${course.crn},${course.credit_hours},${course.satisfied}`).join('\n');
+        //const csvData = filteredRows.map(course => `${course.class_name},${course.crn},${course.credit_hours},${course.satisfied}`).join('\n');
 
         // Set response headers for CSV file download
-        res.setHeader('Content-Disposition', 'attachment; filename=filtered_classes.csv');
-        res.setHeader('Content-Type', 'text/csv');
+        //res.setHeader('Content-Disposition', 'attachment; filename=filtered_classes.csv');
+        //res.setHeader('Content-Type', 'text/csv');
 
         // Send CSV data as response
-        res.send(csvData);
-        console.log('.csv file sent');
+        //res.send(csvData);
+        console.log('classes filtered successfully');
     } catch (error) {
         console.error('Error filtering classes:', error);
         res.status(500).json({ error: 'Internal Server Error' });
     }
-});
-
-/*// Endpoint to receive training data and train the neural network
-app.post('/train', (req, res) => {
-    const trainingData = req.body.trainingData;
-    neuralNetwork.trainNeuralNetwork(trainingData);
-    res.send('Neural network trained successfully');
-});
-
-// Endpoint to receive input data and make predictions
-app.post('/predict', (req, res) => {
-    const inputData = req.body.inputData;
-    const predictions = neuralNetwork.makePredictions(inputData);
-    res.json(predictions);
 });*/
 
 // Define input size based on your dataset
-const inputSize = 3;
+const inputSize = 3; // Assuming you have 3 input features (CRN, class name, credit hours)
 
 // Define your neural network using TensorFlow.js
 const model = tf.sequential();
@@ -132,7 +118,32 @@ model.add(tf.layers.dense({ units: 10, activation: 'relu', inputShape: [inputSiz
 model.add(tf.layers.dense({ units: 1 }));
 model.compile({ optimizer: 'sgd', loss: 'meanSquaredError' });
 
-// Your server endpoints and other logic...
+app.post('/filterClasses', async (req, res) => {
+    try {
+        // Retrieve filtered data from the database
+        const [rows] = await myconnection.query('SELECT it.crn, class_list.class_name, class_list.credit_hours, it.satisfied FROM it JOIN class_list ON it.crn = class_list.crn_num');
+        
+        // Filter rows based on the condition (remove rows where course.satisfied === '1')
+        const filteredRows = rows.filter(course => course.satisfied !== '1');
+
+        // Prepare input data for the neural network
+        const inputData = filteredRows.map(course => [course.crn, course.class_name, course.credit_hours]);
+
+        // Convert input data to TensorFlow tensor
+        const tensorInputData = tf.tensor(inputData);
+
+        // Define and provide the target labels (desired outputs)
+        const targetData = [/* Provide your target labels here */];
+
+        // Train the model using the filtered data
+        await model.fit(tensorInputData, targetData);
+
+        res.json({ message: 'Filtered classes processed and model trained successfully' });
+    } catch (error) {
+        console.error('Error processing filtered classes:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
