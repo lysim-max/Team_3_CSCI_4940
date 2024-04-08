@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow/tfjs": "^4.17.0",
     "axios": "^1.6.8",
     "bash": "^0.0.1",
     "brain.js": "^2.0.0-beta.23",

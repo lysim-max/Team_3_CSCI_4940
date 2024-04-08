@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise'); // Using mysql2/promise for the promise-based interface
-const OpenAI = require('openai');
+/*const OpenAI = require('openai');*/
 
 // Establish MySQL connection
 const myconnection = mysql.createPool({
@@ -12,7 +12,7 @@ const myconnection = mysql.createPool({
 module.exports = { myconnection };
 
 // Initialize OpenAI API
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY }); // Use environment variable for API key
+/*const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY }); // Use environment variable for API key
 
 async function main() {
     try {
@@ -25,7 +25,7 @@ async function main() {
     } catch (error) {
         console.error("Error connecting to OpenAI:", error);
     }
-}
+}*/
 
 // Call main function to initialize OpenAI API
-main();
+//main();

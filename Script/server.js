@@ -4,11 +4,12 @@ const port = 3000;
 const cors = require('cors');
 const fs = require('fs');
 const bodyParser = require("body-parser");
-const neuralNetwork = require('./neural_network');
+const tf = require('@tensorflow/tfjs');
+//const neuralNetwork = require('./neural_network');
 
 app.use(express.json());
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.urlencoded({ extended: true }));
 
 const { myconnection } = require('./connection');
 
@@ -108,7 +109,7 @@ app.get('/filterClasses', async (req, res) => {
     }
 });
 
-// Endpoint to receive training data and train the neural network
+/*// Endpoint to receive training data and train the neural network
 app.post('/train', (req, res) => {
     const trainingData = req.body.trainingData;
     neuralNetwork.trainNeuralNetwork(trainingData);
@@ -120,7 +121,18 @@ app.post('/predict', (req, res) => {
     const inputData = req.body.inputData;
     const predictions = neuralNetwork.makePredictions(inputData);
     res.json(predictions);
-});
+});*/
+
+// Define input size based on your dataset
+const inputSize = 3;
+
+// Define your neural network using TensorFlow.js
+const model = tf.sequential();
+model.add(tf.layers.dense({ units: 10, activation: 'relu', inputShape: [inputSize] }));
+model.add(tf.layers.dense({ units: 1 }));
+model.compile({ optimizer: 'sgd', loss: 'meanSquaredError' });
+
+// Your server endpoints and other logic...
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
