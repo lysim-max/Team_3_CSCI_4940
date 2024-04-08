@@ -76,4 +76,5 @@
     border-radius: 50%;
     padding-top: 15px;
     padding-left: 15px;
+    transform: translateX(60px);
 }

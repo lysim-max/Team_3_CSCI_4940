@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(`http://127.0.0.1:3000/postit`, {
             method: 'POST',
             headers:{'Content-Type': 'application/json',},
-            body: JSON.stringify(classData)
+            body: JSON.stringify(classData),
         })
         .then (response =>{
             if (!response.ok){
@@ -32,28 +32,42 @@ document.addEventListener("DOMContentLoaded", function () {
             const className = document.createElement("div");
             className.setAttribute("class", "name-class");
             className.textContent = table3.class_name;
-        
+
             /*const semester = document.createElement("h4");
             semester.textContent = "Semester: " + table.semester;*/
-        
+
             const creditHours = document.createElement("div");
             creditHours.setAttribute("class", "credit-class");
             creditHours.textContent = table3.credit_hours;
-        
+
             //const satisfied = document.createElement("div");
             //satisfied.setAttribute("class", "sat-class");
             //satisfied.textContent = table.satisfied;
-        
-            const satButton = document.createElement('button');
+
+            const satButton = document.createElement('input');
+            satButton.type = "checkbox";
             satButton.setAttribute("class", "button1");
             satButton.textContent = " ";
-            satButton.addEventListener("click", function (e) {
+
+            
+            satButton.addEventListener("change", function (e) {
+
+                if(satButton.checked){
                 const satisfiedValue = "1";
-                const crn = table3.crn;
-                alterTable(crn, satisfiedValue);
-                alert(crn + " has been satisfied");
+                satButton.style.accentColor ="orange";
+                const crn = table3.crn; // Assuming table3 has the crn property
+                alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
+                console.log(crn + " has been satisfied");
+                }
+                else{
+                    const satisfiedValue = "0";
+                const crn = table3.crn; // Assuming table3 has the crn property
+                alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
+                console.log(crn + " has not been satisfied");
+
+                }
             });
-        
+
             sheetDiv.appendChild(ID);
             sheetDiv.appendChild(className); 
             //sheetDiv.appendChild(semester); 

@@ -5,7 +5,7 @@ const mysql = require('mysql2/promise'); // Using mysql2/promise for the promise
 const myconnection = mysql.createPool({
     host: "127.0.0.1",
     user: "root",
-    password: "CSCI4400",
+    password: "deadlox02",
     database: "capstone_project"
 });
 
