@@ -13,6 +13,7 @@ function loginFunc(){
     }
 
 } 
+//choosing degree
 var degreeMenu = document.getElementById('degree');
     degreeMenu.onchange = function(){
 var userOption = this.options[this.selectedIndex];
@@ -22,6 +23,8 @@ var userOption = this.options[this.selectedIndex];
     }
 
 }
+
+//func to load script on page
 function loadScript(url) {
     return new Promise((resolve, reject) => {
         var script = document.createElement('script');

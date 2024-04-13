@@ -66,6 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log(crn + " has not been satisfied");
 
                 }
+                /*semesterMenu.addEventListener("change", function (e) {
+
+                    if(satButton.checked){
+                    const satisfiedValue = "1";
+                    satButton.style.accentColor ="orange";
+                    const crn = table3.crn; // Assuming table3 has the crn property
+                    alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
+                    console.log(crn + " has been satisfied");
+                    }
+                    else{
+                        const satisfiedValue = "0";
+                    const crn = table3.crn; // Assuming table3 has the crn property
+                    alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
+                    console.log(crn + " has not been satisfied");
+    
+                    }*/
             });
 
             sheetDiv.appendChild(ID);
