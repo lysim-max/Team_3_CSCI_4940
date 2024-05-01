@@ -32,18 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const className = document.createElement("div");
             className.setAttribute("class", "name-class");
             className.textContent = table3.class_name;
-
-            /*const semester = document.createElement("h4");
-            semester.textContent = "Semester: " + table.semester;*/
-
+        
             const creditHours = document.createElement("div");
             creditHours.setAttribute("class", "credit-class");
             creditHours.textContent = table3.credit_hours;
-
-            //const satisfied = document.createElement("div");
-            //satisfied.setAttribute("class", "sat-class");
-            //satisfied.textContent = table.satisfied;
-
+        
             const satButton = document.createElement('input');
             satButton.type = "checkbox";
             satButton.setAttribute("class", "button1");
@@ -57,22 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 satButton.style.accentColor ="orange";
                 const crn = table3.crn; // Assuming table3 has the crn property
                 alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
-                alert(crn + " has been satisfied");
                 }
                 else{
                     const satisfiedValue = "0";
                 const crn = table3.crn; // Assuming table3 has the crn property
                 alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
-                alert(crn + " has been satisfied");
 
                 }
             });
 
             sheetDiv.appendChild(ID);
             sheetDiv.appendChild(className); 
-            //sheetDiv.appendChild(semester); 
             sheetDiv.appendChild(creditHours); 
-            //sheetDiv.appendChild(satisfied);
             sheetDiv.appendChild(satButton);
             return sheetDiv;
 

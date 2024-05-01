@@ -1,24 +1,20 @@
-/*Javascript page for connecting database to website*/
-var mysql2 = require('mysql2');
+const mysql2 = require('mysql2/promise');
 
-var myconnection = mysql2.createConnection({
-    host: "127.0.0.1",
-    user: "root",
-    password: "deadlox02",
-    database: "capstone_project",
+async function initializeDatabase() {
+    try {
+        const myconnection = await mysql2.createConnection({
+            host: "127.0.0.1",
+            user: "root",
+            password: "CSCI4400",
+            database: "capstone_project"
+        });
 
-});
-
-myconnection.connect(function(err){
-    if(err) {
-        console.error('Error connecting:' + err.stack);
-        return;
+        return myconnection;
+    } catch (error) {
+        console.error("Failed to connect to the database:", error);
+        return null;
     }
-    else{
-    console.log("connected!");
-    }
+}
 
-});
+module.exports = { initializeDatabase };
 
-
-module.exports={myconnection};

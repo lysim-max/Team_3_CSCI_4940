@@ -33,16 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
             className.setAttribute("class", "name-class");
             className.textContent = table.class_name;
 
-            /*const semester = document.createElement("h4");
-            semester.textContent = "Semester: " + table.semester;*/
-
             const creditHours = document.createElement("div");
             creditHours.setAttribute("class", "credit-class");
             creditHours.textContent = table.credit_hours;
-
-            //const satisfied = document.createElement("div");
-            //satisfied.setAttribute("class", "sat-class");
-            //satisfied.textContent = table.satisfied;
 
             const satButton = document.createElement('input');
             satButton.type = "checkbox";
@@ -55,15 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 if(satButton.checked){
                 const satisfiedValue = "1";
                 satButton.style.accentColor ="orange";
-                const crn = table.crn; // Assuming table3 has the crn property
-                alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
-                alert(crn + " has been satisfied");
+                const crn = table.crn;
+                alterTable(crn, satisfiedValue);
                 }
                 else{
                     const satisfiedValue = "0";
-                const crn = table.crn; // Assuming table3 has the crn property
-                alterTable(crn, satisfiedValue); // Pass both crn and satisfiedValue
-                alert(crn + " has been satisfied");
+                const crn = table.crn;
+                alterTable(crn, satisfiedValue);
 
                 }
         
@@ -71,9 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             sheetDiv.appendChild(ID);
             sheetDiv.appendChild(className); 
-            //sheetDiv.appendChild(semester); 
             sheetDiv.appendChild(creditHours); 
-            //sheetDiv.appendChild(satisfied);
             sheetDiv.appendChild(satButton);
             return sheetDiv;
 

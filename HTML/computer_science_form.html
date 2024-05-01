@@ -6,7 +6,13 @@
 <link href="../CSS/reset_page.css" rel="reset page">
 </head>
 <body>
-    <h1>Computer Science Form</h1>
+    <h1> Computer Science Form</h1>
+    <select id = "semester" onchange = "selectOption()">
+        <option selected disabled value="#">Choose a semester</option>
+        <option value="Fall">Fall</option> 
+        <option value="Spring">Spring</option> 
+        <option value="Summer">Summer</option> 
+     </select>
     <div class="column-names">
     <div class="column-name1"> ID </div>
     <div class="column-name2"> Class Name </div>
@@ -17,8 +23,7 @@
     <div id="classes" class="container">
        
     </div>
-    <button onclick=submitKevin() class="submit">Submit</button>
-    
+    <button onclick="submitKevin('predictcomp')">Submit</button>
     <script src="../Script/script.js"></script>
     <script src="../Script/displayComp.js"></script>
     </body>

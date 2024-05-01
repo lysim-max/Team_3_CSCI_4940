@@ -1,66 +1,65 @@
 body{
-    width:100vw;
-    height:100vh;
-    margin: 0;
-    padding: 0;
-    background-image: url(../Images/hexagon-background.jpg);
-    background-position: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    overflow: hidden;
+  width:100vw;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Images/hexagon-background.jpg);
+  background-position: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
 
 }
 .header{
-  background-image:linear-gradient(to right,#FDBE11, #FAA517,rgb(183, 82, 36)) ;
-  padding: 5px;
-  padding-left: 20px;
+background-image:linear-gradient(to right,#FDBE11, #FAA517,rgb(183, 82, 36)) ;
+padding: 5px;
+padding-left: 20px;
 
 
 }
 
 .login{
-    width: 320px;
-    height: 420px;
-    background: white;
-    font-style: 'Arial';
-    color: black;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 70px;
+  width: 320px;
+  height: 420px;
+  background: white;
+  font-style: 'Arial';
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 70px;
 }
 .login h2{
-  text-align: center;
-  font-size: 22px;
+text-align: center;
+font-size: 22px;
 }
 .login input{
-  width: 100%;
-  margin-bottom: 10px;
+width: 100%;
+margin-bottom: 10px;
 }
 .login input[type="text"], input[type="password"]{
-  border: none;
-  border-bottom: 2px solid black;
-  background: transparent;
-  outline: none;
-  height: 30px;
-  color: black;
+border: none;
+border-bottom: 2px solid black;
+background: transparent;
+outline: none;
+height: 30px;
+color: black;
 
 }
 .submit{
-  border: none;
-  outline: none;
-  height: 40px;
-  background: rgb(206, 93, 40);
-  font-size: 18px;
-  border-radius: 5px;
-  width:100%;
+border: none;
+outline: none;
+height: 40px;
+background: rgb(206, 93, 40);
+font-size: 18px;
+border-radius: 5px;
+width:100%;
 
 }
 .submit:hover{
-  cursor: pointer;
-  background-color: rgb(183, 82, 36);
-  width:100%;
+cursor: pointer;
+background-color: rgb(183, 82, 36);
+width:100%;
 }
-
